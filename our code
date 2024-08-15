@@ -1,0 +1,17 @@
+# Read data from an input file
+with open('input.txt', 'r') as file:
+    data = file.readlines()
+
+# Process the data: count words in each line
+word_counts = []
+for line in data:
+    word_count = len(line.split())
+    word_counts.append(word_count)
+
+# Write the processed data to an output file
+with open('output.txt', 'w') as file:
+    for i, count in enumerate(word_counts):
+        file.write(f"Line {i+1}: {count} words\n")
+
+# Print confirmation message
+print("Word count processing complete. Check 'output.txt' for results.")
