@@ -2,7 +2,7 @@
 with open('input.txt', 'r') as file:
     data = file.readlines()
 
-jkuat
+
 
 # Process the data: count words in each line
 word_counts = []
